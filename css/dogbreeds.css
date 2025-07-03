@@ -1,0 +1,43 @@
+/* Code for sliding dog name animations, plus dog name styling: */
+
+/* Making it prettier */
+.dog-breed {
+    /* A pretty, script-like appearance */
+    font-style: italic;
+    font-weight: bolder;
+    color: rgb(156, 156, 156);
+}
+
+/* This class triggers the slide animation */
+.sliding {
+    /*
+    Animation Breakdown:
+    - Name: slideUp
+    - Duration: 0.5s (to match your interval)
+    - Fill Mode: forwards (element stays at the end state of the animation)
+    */
+    animation: slideUp 0.5s forwards;
+}
+
+@keyframes slideUp {
+    /* Start: The current text is visible */
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    /* Mid-point (Out): The text has slid left and faded */
+    49% {
+        transform: translateX(-30px);
+        opacity: 0;
+    }
+    /* Mid-point (In): The element instantly moves to the bottom, ready to slide in */
+    50% {
+        transform: translateX(30px);
+        opacity: 0;
+    }
+    /* End: The new text has slid into place and is fully visible */
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
