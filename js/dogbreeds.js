@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 1. Define the text for each category
     const breeds = {
-        small: ['(Yorkie)', '(Boston Terrier)', '(Dachshund)', '(Pomeranian)', '(Chihuahua)'],
+        small: ['(Yorkie)', '(Terrier)', '(Dachshund)', '(Pomeranian)', '(Chihuahua)'],
         medium: ['(Beagle)', '(Border Collie)', '(Poodle)', '(Aussie)', '(Bulldog)'],
         large: ['(German Shepherd)', '(Golden Retriever)', '(Labrador Retriever)', '(Great Dane)', '(Rottweiler)']
     };
